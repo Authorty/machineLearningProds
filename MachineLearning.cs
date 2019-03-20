@@ -12,33 +12,41 @@ namespace MachineLearningProductPrediction
     public static class MachineLearning
     {
 
+        public static float ConvertStringToFloat(string value)
+        {
+            
+            if (String.IsNullOrEmpty(value))
+            {
+                return 0.0f;
+            }
+            var valueBytes = System.Text.Encoding.ASCII.GetBytes(value);
+
+            float floatValueReturn = System.BitConverter.ToSingle(valueBytes, 0);
+
+            return floatValueReturn;
+
+        }
         public static string PredictNextProduct(List<ProgramProductData> productHistoricalData, ProgramProductData currentData)
         {
+            try
+            {
+
+            
+
             // STEP 2: Create a ML.NET environment  
             MLContext mlContext = new MLContext();
 
 
-            //var pipeline = mlContext.Transforms.Conversion.MapValueToKey("CurrentSaleDate")
-            //    .Append(mlContext.Transforms.Conversion.MapValueToKey("LastSaleDate"))
-            //    .Append(mlContext.Transforms.Conversion.MapValueToKey("SecondProduct"))
-            //    .Append(mlContext.Transforms.Conversion.MapValueToKey("CurrentProduct"))
-            //    .Append(mlContext.Transforms.Concatenate("Features", "Quantity", "Price"))
-            //    .Append(mlContext.MulticlassClassification.Trainers.StochasticDualCoordinateAscent(labelColumnName: "SecondProduct", featureColumnName: "Features"))
 
-
-
-
-            //    .Append(mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel"));
-
-
-        var pipeline = mlContext.Transforms.Conversion.MapValueToKey("Label")
-            .Append(mlContext.Transforms.Concatenate("Features", "Price", "LastSaleDate", "CurrentSaleDate", "Quantity", "companyName", "ProductsBoughtWith", "ProductType", "ProductCategory", "ProductGroup"))
+            var pipeline = mlContext.Transforms.Conversion.MapValueToKey("Label")
+            //.Append(mlContext.Transforms.Concatenate("Features", "Price", "LastSaleDate", "CurrentSaleDate", "Quantity", "companyName", "ProductsBoughtWith", "ProductType", "ProductCategory", "ProductGroup"))
+            .Append(mlContext.Transforms.Concatenate("Features", "Price",  "CurrentSaleDate",  "companyName", "CompanyType"  , "ProductCategory", "ProductGroup"))
             .AppendCacheCheckpoint(mlContext)
             .Append(mlContext.MulticlassClassification.Trainers.StochasticDualCoordinateAscent(labelColumnName: "Label", featureColumnName: "Features"))
             .Append(mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel"));
 
-            var data = (IDataView)productHistoricalData;
 
+            var data = mlContext.Data.LoadFromEnumerable<ProgramProductData>(productHistoricalData);
             // STEP 4: Train your model based on the data set  
             var model = pipeline.Fit(data);
 
@@ -46,6 +54,12 @@ namespace MachineLearningProductPrediction
             currentData);
 
             return prediction.PredictedLabels;
+            }
+            catch (Exception e)
+            {
+                return e.InnerException.ToString();
+                
+            }
         }
     }
 }

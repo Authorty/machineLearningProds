@@ -1,0 +1,1781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="onc_pg_famModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="csta_product_group">
+          <Key>
+            <PropertyRef Name="product_group_code" />
+          </Key>
+          <Property Name="product_group_code" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="description" Type="nchar" MaxLength="100" />
+          <Property Name="active" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="product_category_code" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_1_values">
+          <Key>
+            <PropertyRef Name="product_group_level_1_code" />
+          </Key>
+          <Property Name="product_group_level_1_code" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="100" />
+          <Property Name="external_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="active" Type="nchar" MaxLength="1" />
+          <Property Name="parent_group_level_code" Type="nchar" MaxLength="10" />
+          <Property Name="product_group_level_id" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_2_values">
+          <Key>
+            <PropertyRef Name="product_group_level_2_code" />
+          </Key>
+          <Property Name="product_group_level_2_code" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="100" />
+          <Property Name="external_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="active" Type="nchar" MaxLength="1" />
+          <Property Name="parent_group_level_code" Type="nchar" MaxLength="10" />
+          <Property Name="product_group_level_id" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_3_values">
+          <Key>
+            <PropertyRef Name="product_group_level_3_code" />
+          </Key>
+          <Property Name="product_group_level_3_code" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="100" />
+          <Property Name="external_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="active" Type="nchar" MaxLength="1" />
+          <Property Name="parent_group_level_code" Type="nchar" MaxLength="10" />
+          <Property Name="product_group_level_id" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_4_values">
+          <Key>
+            <PropertyRef Name="product_group_level_4_code" />
+          </Key>
+          <Property Name="product_group_level_4_code" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="100" />
+          <Property Name="external_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="active" Type="nchar" MaxLength="1" />
+          <Property Name="parent_group_level_code" Type="nchar" MaxLength="10" />
+          <Property Name="product_group_level_id" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_5_values">
+          <Key>
+            <PropertyRef Name="product_group_level_5_code" />
+          </Key>
+          <Property Name="product_group_level_5_code" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="100" />
+          <Property Name="external_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="active" Type="nchar" MaxLength="1" />
+          <Property Name="parent_group_level_code" Type="nchar" MaxLength="10" />
+          <Property Name="product_group_level_id" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_6_values">
+          <Key>
+            <PropertyRef Name="product_group_level_6_code" />
+          </Key>
+          <Property Name="product_group_level_6_code" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="100" />
+          <Property Name="external_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="active" Type="nchar" MaxLength="1" />
+          <Property Name="parent_group_level_code" Type="nchar" MaxLength="10" />
+          <Property Name="product_group_level_id" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_7_values">
+          <Key>
+            <PropertyRef Name="product_group_level_7_code" />
+          </Key>
+          <Property Name="product_group_level_7_code" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="100" />
+          <Property Name="external_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="active" Type="nchar" MaxLength="1" />
+          <Property Name="parent_group_level_code" Type="nchar" MaxLength="10" />
+          <Property Name="product_group_level_id" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_8_values">
+          <Key>
+            <PropertyRef Name="product_group_level_8_code" />
+          </Key>
+          <Property Name="product_group_level_8_code" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="100" />
+          <Property Name="external_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="active" Type="nchar" MaxLength="1" />
+          <Property Name="parent_group_level_code" Type="nchar" MaxLength="10" />
+          <Property Name="product_group_level_id" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_definition">
+          <Key>
+            <PropertyRef Name="product_group_level_id" />
+          </Key>
+          <Property Name="product_group_level_id" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="50" />
+          <Property Name="sort_order" Type="int" />
+          <Property Name="active" Type="nchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_definition_table">
+          <Key>
+            <PropertyRef Name="product_group_level_id" />
+          </Key>
+          <Property Name="product_group_level_id" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="table_name" Type="nvarchar" MaxLength="100" />
+          <Property Name="sort_order" Type="int" />
+          <Property Name="active" Type="nchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="cstd_company_sales_history">
+          <Key>
+            <PropertyRef Name="company_sales_history_id" />
+          </Key>
+          <Property Name="company_sales_history_id" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="company_id" Type="nchar" MaxLength="10" />
+          <Property Name="product_code" Type="nchar" MaxLength="10" />
+          <Property Name="sales_revenue" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="sales_date" Type="datetime" />
+          <Property Name="ship_to_num" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="onca_phone_type">
+          <Key>
+            <PropertyRef Name="phone_type_code" />
+          </Key>
+          <Property Name="phone_type_code" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="description" Type="nchar" MaxLength="50" />
+          <Property Name="active" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="device_type" Type="nchar" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="onca_product">
+          <Key>
+            <PropertyRef Name="product_code" />
+          </Key>
+          <Property Name="product_code" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="manufacturer_code" Type="nchar" MaxLength="10" />
+          <Property Name="description" Type="nchar" MaxLength="50" />
+          <Property Name="unit_price" Type="decimal" Precision="15" Scale="4" />
+          <Property Name="active" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="cst_feature" Type="nvarchar" MaxLength="2000" />
+          <Property Name="cst_benefit" Type="nvarchar" MaxLength="2000" />
+          <Property Name="cst_part_number" Type="nvarchar" MaxLength="20" />
+          <Property Name="cst_part_number_location" Type="nvarchar" MaxLength="20" />
+          <Property Name="cst_category" Type="nvarchar" MaxLength="50" />
+          <Property Name="cst_tools_and_resources_description" Type="nvarchar" MaxLength="100" />
+          <Property Name="cst_expiration_date" Type="datetime" />
+          <Property Name="cst_class" Type="nchar" MaxLength="2" />
+          <Property Name="cst_ist_use" Type="nvarchar" MaxLength="40" />
+          <Property Name="cst_rev" Type="nchar" MaxLength="10" />
+          <Property Name="cst_uom" Type="nchar" MaxLength="10" />
+          <Property Name="cst_product_group_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_min_lead_time_uom_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_product_group_level_1_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_product_group_level_2_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_product_group_level_3_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_product_group_level_4_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_product_group_level_5_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_product_group_level_6_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_product_group_level_7_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_product_group_level_8_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_order_type_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_created_by_user_code" Type="nchar" MaxLength="20" />
+          <Property Name="cst_updated_by_user_code" Type="nchar" MaxLength="20" />
+          <Property Name="cst_product_availability_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_sku" Type="nchar" MaxLength="50" />
+          <Property Name="cst_alternate_description" Type="nvarchar" MaxLength="500" />
+          <Property Name="cst_upc" Type="nchar" MaxLength="50" />
+          <Property Name="cst_dea_certificate_required" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="cst_product_category_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_product_division_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_product_brand_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_inventory_status_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_min_lead_time" Type="decimal" Precision="15" Scale="4" />
+          <Property Name="cst_new_distribution_until_date" Type="datetime" />
+          <Property Name="cst_first_ship_date" Type="datetime" />
+          <Property Name="cst_last_ship_date" Type="datetime" />
+          <Property Name="cst_first_order_date" Type="datetime" />
+          <Property Name="cst_last_order_date" Type="datetime" />
+          <Property Name="cst_track_availability" Type="nchar" MaxLength="1" />
+          <Property Name="cst_sku_type_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_creation_date" Type="datetime" />
+          <Property Name="cst_updated_date" Type="datetime" />
+          <Property Name="cst_create_opportunity" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="cst_opportunity_seed" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="cost" Type="decimal" Precision="15" Scale="4" />
+          <Property Name="quantity_on_hand" Type="decimal" Precision="15" Scale="4" />
+          <Property Name="ytd_quantity_sold" Type="decimal" Precision="15" Scale="4" />
+          <Property Name="ytd_amount_sold" Type="decimal" Precision="15" Scale="4" />
+          <Property Name="cst_idh_number" Type="nvarchar" MaxLength="50" />
+          <Property Name="cst_mfgno" Type="nchar" MaxLength="10" />
+          <Property Name="cst_pack" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_wt" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_sfx" Type="int" />
+          <Property Name="cst_item_upc" Type="nvarchar" MaxLength="50" />
+          <Property Name="cst_upc_prefix" Type="nvarchar" MaxLength="10" />
+          <Property Name="cst_upc_suffix" Type="nvarchar" MaxLength="5" />
+          <Property Name="cst_ordering_unit" Type="nchar" MaxLength="10" />
+          <Property Name="cst_mcs_brand_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="cst_vendor_item_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="cst_gtin_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="cst_misc1_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="cst_misc2_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="cst_discontinued_flag" Type="nchar" MaxLength="1" />
+          <Property Name="cst_discontinued_date" Type="datetime" />
+          <Property Name="cst_product_length" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_product_width" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_product_height" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_case_length" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_case_width" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_case_height" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_pallet_length" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_pallet_width" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_pallet_height" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_case_per_layer" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_layer_per_pallet" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_case_per_pallet" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_minimum_amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_minimum_unit" Type="nchar" MaxLength="10" />
+          <Property Name="cst_shelf_life" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_shelf_life_units" Type="nchar" MaxLength="10" />
+          <Property Name="cst_size" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_size_units" Type="nchar" MaxLength="10" />
+          <Property Name="cst_case_each" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_pack_each" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_each" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="mcs_product_flag" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="cst_effective_date" Type="datetime" />
+        </EntityType>
+        <EntityType Name="oncd_company">
+          <Key>
+            <PropertyRef Name="company_id" />
+          </Key>
+          <Property Name="company_id" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="company_name_1" Type="nchar" MaxLength="100" />
+          <Property Name="company_name_2" Type="nchar" MaxLength="100" />
+          <Property Name="company_name_1_search" Type="nchar" MaxLength="100" />
+          <Property Name="company_name_2_search" Type="nchar" MaxLength="100" />
+          <Property Name="company_name_1_soundex" Type="nchar" MaxLength="20" />
+          <Property Name="company_name_2_soundex" Type="nchar" MaxLength="20" />
+          <Property Name="annual_sales" Type="int" />
+          <Property Name="number_of_employees" Type="int" />
+          <Property Name="profile_code" Type="nchar" MaxLength="10" />
+          <Property Name="external_id" Type="nchar" MaxLength="20" />
+          <Property Name="company_type_code" Type="nchar" MaxLength="10" />
+          <Property Name="contact_method_code" Type="nchar" MaxLength="10" />
+          <Property Name="do_not_solicit" Type="nchar" MaxLength="1" />
+          <Property Name="company_status_code" Type="nchar" MaxLength="10" />
+          <Property Name="duplicate_check" Type="nchar" MaxLength="1" />
+          <Property Name="creation_date" Type="datetime" />
+          <Property Name="created_by_user_code" Type="nchar" MaxLength="20" />
+          <Property Name="updated_date" Type="datetime" />
+          <Property Name="updated_by_user_code" Type="nchar" MaxLength="20" />
+          <Property Name="status_updated_date" Type="datetime" />
+          <Property Name="status_updated_by_user_code" Type="nchar" MaxLength="20" />
+          <Property Name="parent_company_id" Type="nchar" MaxLength="10" />
+          <Property Name="ticker_symbol" Type="nvarchar" MaxLength="10" />
+          <Property Name="cst_do_not_call_flag" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="cst_do_not_call_date" Type="datetime" />
+          <Property Name="cst_on_hold_flag" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="cst_on_hold_reason_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_is_spanish_flag" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="cst_attempts" Type="int" />
+          <Property Name="cst_company_rank_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_rest_until_date" Type="datetime" />
+          <Property Name="cst_yearly_call_frequency" Type="int" />
+          <Property Name="cst_attempts_year_to_date" Type="int" />
+          <Property Name="cst_company_association_type_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_cma_no" Type="nvarchar" MaxLength="50" />
+          <Property Name="cst_facility_type_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_do_not_fax_flag" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="cst_do_not_email_flag" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="cst_do_not_mail_flag" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="cst_dns_flag" Type="nchar" MaxLength="1" />
+          <Property Name="cst_dnscc_flag" Type="nchar" MaxLength="1" Nullable="false" />
+          <Property Name="cst_prescriber" Type="nvarchar" MaxLength="40" />
+          <Property Name="cst_prescriber_title" Type="nvarchar" MaxLength="40" />
+          <Property Name="cst_ims_number" Type="nchar" MaxLength="10" />
+          <Property Name="cst_account_number" Type="nvarchar" MaxLength="20" />
+          <Property Name="cst_field_rep_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_region_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_regional_manager_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_completed_flag" Type="nchar" MaxLength="1" />
+          <Property Name="cst_program_flow_id" Type="uniqueidentifier" />
+          <Property Name="cst_tdlinx_account_code" Type="nchar" MaxLength="6" />
+          <Property Name="cst_tdlinx_store_code" Type="nchar" MaxLength="7" />
+          <Property Name="cst_client_cot_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_west_cot_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_client_segment_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_west_segment_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_contact_frequency_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_client_account_number" Type="nvarchar" MaxLength="20" />
+          <Property Name="cst_client_company_id" Type="nchar" MaxLength="10" />
+          <Property Name="cst_creation_admin_date" Type="date" />
+          <Property Name="cst_require_samples" Type="nchar" MaxLength="1" />
+          <Property Name="cst_client_focus_account" Type="nchar" MaxLength="10" />
+          <Property Name="cst_west_focus_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_use_custom_product_codes" Type="nchar" MaxLength="1" />
+          <Property Name="cst_special_shipping_instructions" Type="nvarchar" MaxLength="250" />
+          <Property Name="cst_spend_rate" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_projected_spend_rate" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_allow_closeouts" Type="nchar" MaxLength="1" />
+          <Property Name="cst_allow_non_promotable_sku" Type="nchar" MaxLength="1" />
+          <Property Name="cst_company_stage_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_accrued_amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_projected_funding_amount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_price_bracket_code" Type="nchar" MaxLength="10" />
+          <Property Name="sold_to" Type="varchar" MaxLength="25" />
+          <Property Name="cst_coverage_code" Type="nchar" MaxLength="10" />
+          <Property Name="cst_hierarchy_id" Type="varchar" MaxLength="50" />
+          <Property Name="cst_hierarchy_name" Type="varchar" MaxLength="100" />
+          <Property Name="cst_annual_sales" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="cst_on_hold_date" Type="datetime" />
+          <Property Name="cst_completion_date" Type="datetime" />
+          <Property Name="cst_on_hold_start_date" Type="datetime" />
+          <Property Name="cst_on_hold_end_date" Type="datetime" />
+          <Property Name="cst_store_count" Type="int" />
+          <Property Name="cst_mcs_code" Type="nvarchar" MaxLength="50" />
+          <Property Name="Owner_ID" Type="bigint" />
+        </EntityType>
+        <Association Name="company_company_329">
+          <End Role="oncd_company" Type="Self.oncd_company" Multiplicity="0..1" />
+          <End Role="oncd_company1" Type="Self.oncd_company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="oncd_company">
+              <PropertyRef Name="company_id" />
+            </Principal>
+            <Dependent Role="oncd_company1">
+              <PropertyRef Name="parent_company_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__3849F45B">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_2_values" Type="Self.csta_product_group_level_2_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_2_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__3A323CCD">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_1_values" Type="Self.csta_product_group_level_1_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_1_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__3C1A853F">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_3_values" Type="Self.csta_product_group_level_3_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_3_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__3E02CDB1">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_4_values" Type="Self.csta_product_group_level_4_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_4_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__3FEB1623">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_5_values" Type="Self.csta_product_group_level_5_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_5_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__41D35E95">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_6_values" Type="Self.csta_product_group_level_6_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_6_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__43BBA707">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_7_values" Type="Self.csta_product_group_level_7_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_7_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__45A3EF79">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_8_values" Type="Self.csta_product_group_level_8_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_8_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cstd_comp__compa__3D5EEB29">
+          <End Role="oncd_company" Type="Self.oncd_company" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="cstd_company_sales_history" Type="Self.cstd_company_sales_history" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="oncd_company">
+              <PropertyRef Name="company_id" />
+            </Principal>
+            <Dependent Role="cstd_company_sales_history">
+              <PropertyRef Name="company_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cstd_comp__produ__3E530F62">
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="0..1" />
+          <End Role="cstd_company_sales_history" Type="Self.cstd_company_sales_history" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="onca_product">
+              <PropertyRef Name="product_code" />
+            </Principal>
+            <Dependent Role="cstd_company_sales_history">
+              <PropertyRef Name="product_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_csta_product_group_level_definition_csta_product_group_level_definition_table">
+          <End Role="csta_product_group_level_definition_table" Type="Self.csta_product_group_level_definition_table" Multiplicity="1" />
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition_table">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group">
+          <End Role="csta_product_group" Type="Self.csta_product_group" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group">
+              <PropertyRef Name="product_group_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_1_values">
+          <End Role="csta_product_group_level_1_values" Type="Self.csta_product_group_level_1_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_1_values">
+              <PropertyRef Name="product_group_level_1_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_1_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_2_values">
+          <End Role="csta_product_group_level_2_values" Type="Self.csta_product_group_level_2_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_2_values">
+              <PropertyRef Name="product_group_level_2_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_2_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_3_values">
+          <End Role="csta_product_group_level_3_values" Type="Self.csta_product_group_level_3_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_3_values">
+              <PropertyRef Name="product_group_level_3_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_3_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_4_values">
+          <End Role="csta_product_group_level_4_values" Type="Self.csta_product_group_level_4_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_4_values">
+              <PropertyRef Name="product_group_level_4_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_4_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_5_values">
+          <End Role="csta_product_group_level_5_values" Type="Self.csta_product_group_level_5_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_5_values">
+              <PropertyRef Name="product_group_level_5_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_5_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_6_values">
+          <End Role="csta_product_group_level_6_values" Type="Self.csta_product_group_level_6_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_6_values">
+              <PropertyRef Name="product_group_level_6_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_6_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_7_values">
+          <End Role="csta_product_group_level_7_values" Type="Self.csta_product_group_level_7_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_7_values">
+              <PropertyRef Name="product_group_level_7_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_7_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_8_values">
+          <End Role="csta_product_group_level_8_values" Type="Self.csta_product_group_level_8_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_8_values">
+              <PropertyRef Name="product_group_level_8_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_8_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="onc_pg_famModelStoreContainer">
+          <EntitySet Name="csta_product_group" EntityType="Self.csta_product_group" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="csta_product_group_level_1_values" EntityType="Self.csta_product_group_level_1_values" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="csta_product_group_level_2_values" EntityType="Self.csta_product_group_level_2_values" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="csta_product_group_level_3_values" EntityType="Self.csta_product_group_level_3_values" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="csta_product_group_level_4_values" EntityType="Self.csta_product_group_level_4_values" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="csta_product_group_level_5_values" EntityType="Self.csta_product_group_level_5_values" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="csta_product_group_level_6_values" EntityType="Self.csta_product_group_level_6_values" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="csta_product_group_level_7_values" EntityType="Self.csta_product_group_level_7_values" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="csta_product_group_level_8_values" EntityType="Self.csta_product_group_level_8_values" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="csta_product_group_level_definition" EntityType="Self.csta_product_group_level_definition" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="csta_product_group_level_definition_table" EntityType="Self.csta_product_group_level_definition_table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="cstd_company_sales_history" EntityType="Self.cstd_company_sales_history" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="onca_phone_type" EntityType="Self.onca_phone_type" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="onca_product" EntityType="Self.onca_product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="oncd_company" EntityType="Self.oncd_company" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="company_company_329" Association="Self.company_company_329">
+            <End Role="oncd_company" EntitySet="oncd_company" />
+            <End Role="oncd_company1" EntitySet="oncd_company" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__3849F45B" Association="Self.FK__csta_prod__produ__3849F45B">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_2_values" EntitySet="csta_product_group_level_2_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__3A323CCD" Association="Self.FK__csta_prod__produ__3A323CCD">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_1_values" EntitySet="csta_product_group_level_1_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__3C1A853F" Association="Self.FK__csta_prod__produ__3C1A853F">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_3_values" EntitySet="csta_product_group_level_3_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__3E02CDB1" Association="Self.FK__csta_prod__produ__3E02CDB1">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_4_values" EntitySet="csta_product_group_level_4_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__3FEB1623" Association="Self.FK__csta_prod__produ__3FEB1623">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_5_values" EntitySet="csta_product_group_level_5_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__41D35E95" Association="Self.FK__csta_prod__produ__41D35E95">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_6_values" EntitySet="csta_product_group_level_6_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__43BBA707" Association="Self.FK__csta_prod__produ__43BBA707">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_7_values" EntitySet="csta_product_group_level_7_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__45A3EF79" Association="Self.FK__csta_prod__produ__45A3EF79">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_8_values" EntitySet="csta_product_group_level_8_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cstd_comp__compa__3D5EEB29" Association="Self.FK__cstd_comp__compa__3D5EEB29">
+            <End Role="oncd_company" EntitySet="oncd_company" />
+            <End Role="cstd_company_sales_history" EntitySet="cstd_company_sales_history" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cstd_comp__produ__3E530F62" Association="Self.FK__cstd_comp__produ__3E530F62">
+            <End Role="onca_product" EntitySet="onca_product" />
+            <End Role="cstd_company_sales_history" EntitySet="cstd_company_sales_history" />
+          </AssociationSet>
+          <AssociationSet Name="FK_csta_product_group_level_definition_csta_product_group_level_definition_table" Association="Self.FK_csta_product_group_level_definition_csta_product_group_level_definition_table">
+            <End Role="csta_product_group_level_definition_table" EntitySet="csta_product_group_level_definition_table" />
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group" Association="Self.FK_onca_product_csta_product_group">
+            <End Role="csta_product_group" EntitySet="csta_product_group" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_1_values" Association="Self.FK_onca_product_csta_product_group_level_1_values">
+            <End Role="csta_product_group_level_1_values" EntitySet="csta_product_group_level_1_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_2_values" Association="Self.FK_onca_product_csta_product_group_level_2_values">
+            <End Role="csta_product_group_level_2_values" EntitySet="csta_product_group_level_2_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_3_values" Association="Self.FK_onca_product_csta_product_group_level_3_values">
+            <End Role="csta_product_group_level_3_values" EntitySet="csta_product_group_level_3_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_4_values" Association="Self.FK_onca_product_csta_product_group_level_4_values">
+            <End Role="csta_product_group_level_4_values" EntitySet="csta_product_group_level_4_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_5_values" Association="Self.FK_onca_product_csta_product_group_level_5_values">
+            <End Role="csta_product_group_level_5_values" EntitySet="csta_product_group_level_5_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_6_values" Association="Self.FK_onca_product_csta_product_group_level_6_values">
+            <End Role="csta_product_group_level_6_values" EntitySet="csta_product_group_level_6_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_7_values" Association="Self.FK_onca_product_csta_product_group_level_7_values">
+            <End Role="csta_product_group_level_7_values" EntitySet="csta_product_group_level_7_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_8_values" Association="Self.FK_onca_product_csta_product_group_level_8_values">
+            <End Role="csta_product_group_level_8_values" EntitySet="csta_product_group_level_8_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="onc_pg_famModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="csta_product_group">
+          <Key>
+            <PropertyRef Name="product_group_code" />
+          </Key>
+          <Property Name="product_group_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="active" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="product_category_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="onca_product" Relationship="Self.FK_onca_product_csta_product_group" FromRole="csta_product_group" ToRole="onca_product" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_1_values">
+          <Key>
+            <PropertyRef Name="product_group_level_1_code" />
+          </Key>
+          <Property Name="product_group_level_1_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="external_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="active" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="parent_group_level_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="product_group_level_id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="csta_product_group_level_definition" Relationship="Self.FK__csta_prod__produ__3A323CCD" FromRole="csta_product_group_level_1_values" ToRole="csta_product_group_level_definition" />
+          <NavigationProperty Name="onca_product" Relationship="Self.FK_onca_product_csta_product_group_level_1_values" FromRole="csta_product_group_level_1_values" ToRole="onca_product" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_2_values">
+          <Key>
+            <PropertyRef Name="product_group_level_2_code" />
+          </Key>
+          <Property Name="product_group_level_2_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="external_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="active" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="parent_group_level_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="product_group_level_id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="csta_product_group_level_definition" Relationship="Self.FK__csta_prod__produ__3849F45B" FromRole="csta_product_group_level_2_values" ToRole="csta_product_group_level_definition" />
+          <NavigationProperty Name="onca_product" Relationship="Self.FK_onca_product_csta_product_group_level_2_values" FromRole="csta_product_group_level_2_values" ToRole="onca_product" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_3_values">
+          <Key>
+            <PropertyRef Name="product_group_level_3_code" />
+          </Key>
+          <Property Name="product_group_level_3_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="external_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="active" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="parent_group_level_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="product_group_level_id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="csta_product_group_level_definition" Relationship="Self.FK__csta_prod__produ__3C1A853F" FromRole="csta_product_group_level_3_values" ToRole="csta_product_group_level_definition" />
+          <NavigationProperty Name="onca_product" Relationship="Self.FK_onca_product_csta_product_group_level_3_values" FromRole="csta_product_group_level_3_values" ToRole="onca_product" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_4_values">
+          <Key>
+            <PropertyRef Name="product_group_level_4_code" />
+          </Key>
+          <Property Name="product_group_level_4_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="external_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="active" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="parent_group_level_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="product_group_level_id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="csta_product_group_level_definition" Relationship="Self.FK__csta_prod__produ__3E02CDB1" FromRole="csta_product_group_level_4_values" ToRole="csta_product_group_level_definition" />
+          <NavigationProperty Name="onca_product" Relationship="Self.FK_onca_product_csta_product_group_level_4_values" FromRole="csta_product_group_level_4_values" ToRole="onca_product" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_5_values">
+          <Key>
+            <PropertyRef Name="product_group_level_5_code" />
+          </Key>
+          <Property Name="product_group_level_5_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="external_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="active" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="parent_group_level_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="product_group_level_id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="csta_product_group_level_definition" Relationship="Self.FK__csta_prod__produ__3FEB1623" FromRole="csta_product_group_level_5_values" ToRole="csta_product_group_level_definition" />
+          <NavigationProperty Name="onca_product" Relationship="Self.FK_onca_product_csta_product_group_level_5_values" FromRole="csta_product_group_level_5_values" ToRole="onca_product" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_6_values">
+          <Key>
+            <PropertyRef Name="product_group_level_6_code" />
+          </Key>
+          <Property Name="product_group_level_6_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="external_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="active" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="parent_group_level_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="product_group_level_id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="csta_product_group_level_definition" Relationship="Self.FK__csta_prod__produ__41D35E95" FromRole="csta_product_group_level_6_values" ToRole="csta_product_group_level_definition" />
+          <NavigationProperty Name="onca_product" Relationship="Self.FK_onca_product_csta_product_group_level_6_values" FromRole="csta_product_group_level_6_values" ToRole="onca_product" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_7_values">
+          <Key>
+            <PropertyRef Name="product_group_level_7_code" />
+          </Key>
+          <Property Name="product_group_level_7_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="external_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="active" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="parent_group_level_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="product_group_level_id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="csta_product_group_level_definition" Relationship="Self.FK__csta_prod__produ__43BBA707" FromRole="csta_product_group_level_7_values" ToRole="csta_product_group_level_definition" />
+          <NavigationProperty Name="onca_product" Relationship="Self.FK_onca_product_csta_product_group_level_7_values" FromRole="csta_product_group_level_7_values" ToRole="onca_product" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_8_values">
+          <Key>
+            <PropertyRef Name="product_group_level_8_code" />
+          </Key>
+          <Property Name="product_group_level_8_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="external_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="active" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="parent_group_level_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="product_group_level_id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="csta_product_group_level_definition" Relationship="Self.FK__csta_prod__produ__45A3EF79" FromRole="csta_product_group_level_8_values" ToRole="csta_product_group_level_definition" />
+          <NavigationProperty Name="onca_product" Relationship="Self.FK_onca_product_csta_product_group_level_8_values" FromRole="csta_product_group_level_8_values" ToRole="onca_product" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_definition">
+          <Key>
+            <PropertyRef Name="product_group_level_id" />
+          </Key>
+          <Property Name="product_group_level_id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sort_order" Type="Int32" />
+          <Property Name="active" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="csta_product_group_level_1_values" Relationship="Self.FK__csta_prod__produ__3A323CCD" FromRole="csta_product_group_level_definition" ToRole="csta_product_group_level_1_values" />
+          <NavigationProperty Name="csta_product_group_level_2_values" Relationship="Self.FK__csta_prod__produ__3849F45B" FromRole="csta_product_group_level_definition" ToRole="csta_product_group_level_2_values" />
+          <NavigationProperty Name="csta_product_group_level_3_values" Relationship="Self.FK__csta_prod__produ__3C1A853F" FromRole="csta_product_group_level_definition" ToRole="csta_product_group_level_3_values" />
+          <NavigationProperty Name="csta_product_group_level_4_values" Relationship="Self.FK__csta_prod__produ__3E02CDB1" FromRole="csta_product_group_level_definition" ToRole="csta_product_group_level_4_values" />
+          <NavigationProperty Name="csta_product_group_level_5_values" Relationship="Self.FK__csta_prod__produ__3FEB1623" FromRole="csta_product_group_level_definition" ToRole="csta_product_group_level_5_values" />
+          <NavigationProperty Name="csta_product_group_level_6_values" Relationship="Self.FK__csta_prod__produ__41D35E95" FromRole="csta_product_group_level_definition" ToRole="csta_product_group_level_6_values" />
+          <NavigationProperty Name="csta_product_group_level_7_values" Relationship="Self.FK__csta_prod__produ__43BBA707" FromRole="csta_product_group_level_definition" ToRole="csta_product_group_level_7_values" />
+          <NavigationProperty Name="csta_product_group_level_8_values" Relationship="Self.FK__csta_prod__produ__45A3EF79" FromRole="csta_product_group_level_definition" ToRole="csta_product_group_level_8_values" />
+          <NavigationProperty Name="csta_product_group_level_definition_table" Relationship="Self.FK_csta_product_group_level_definition_csta_product_group_level_definition_table" FromRole="csta_product_group_level_definition" ToRole="csta_product_group_level_definition_table" />
+        </EntityType>
+        <EntityType Name="csta_product_group_level_definition_table">
+          <Key>
+            <PropertyRef Name="product_group_level_id" />
+          </Key>
+          <Property Name="product_group_level_id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="table_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="sort_order" Type="Int32" />
+          <Property Name="active" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="csta_product_group_level_definition" Relationship="Self.FK_csta_product_group_level_definition_csta_product_group_level_definition_table" FromRole="csta_product_group_level_definition_table" ToRole="csta_product_group_level_definition" />
+        </EntityType>
+        <EntityType Name="cstd_company_sales_history">
+          <Key>
+            <PropertyRef Name="company_sales_history_id" />
+          </Key>
+          <Property Name="company_sales_history_id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="company_id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="product_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="sales_revenue" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="sales_date" Type="DateTime" Precision="3" />
+          <Property Name="ship_to_num" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="oncd_company" Relationship="Self.FK__cstd_comp__compa__3D5EEB29" FromRole="cstd_company_sales_history" ToRole="oncd_company" />
+          <NavigationProperty Name="onca_product" Relationship="Self.FK__cstd_comp__produ__3E530F62" FromRole="cstd_company_sales_history" ToRole="onca_product" />
+        </EntityType>
+        <EntityType Name="onca_phone_type">
+          <Key>
+            <PropertyRef Name="phone_type_code" />
+          </Key>
+          <Property Name="phone_type_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="active" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="device_type" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="onca_product">
+          <Key>
+            <PropertyRef Name="product_code" />
+          </Key>
+          <Property Name="product_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="manufacturer_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="description" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="unit_price" Type="Decimal" Precision="15" Scale="4" />
+          <Property Name="active" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="cst_feature" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="cst_benefit" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="cst_part_number" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="cst_part_number_location" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="cst_category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cst_tools_and_resources_description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="cst_expiration_date" Type="DateTime" Precision="3" />
+          <Property Name="cst_class" Type="String" MaxLength="2" FixedLength="true" Unicode="true" />
+          <Property Name="cst_ist_use" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="cst_rev" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_uom" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_product_group_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_min_lead_time_uom_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_product_group_level_1_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_product_group_level_2_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_product_group_level_3_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_product_group_level_4_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_product_group_level_5_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_product_group_level_6_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_product_group_level_7_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_product_group_level_8_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_order_type_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_created_by_user_code" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="cst_updated_by_user_code" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="cst_product_availability_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_sku" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="cst_alternate_description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="cst_upc" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="cst_dea_certificate_required" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="cst_product_category_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_product_division_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_product_brand_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_inventory_status_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_min_lead_time" Type="Decimal" Precision="15" Scale="4" />
+          <Property Name="cst_new_distribution_until_date" Type="DateTime" Precision="3" />
+          <Property Name="cst_first_ship_date" Type="DateTime" Precision="3" />
+          <Property Name="cst_last_ship_date" Type="DateTime" Precision="3" />
+          <Property Name="cst_first_order_date" Type="DateTime" Precision="3" />
+          <Property Name="cst_last_order_date" Type="DateTime" Precision="3" />
+          <Property Name="cst_track_availability" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="cst_sku_type_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_creation_date" Type="DateTime" Precision="3" />
+          <Property Name="cst_updated_date" Type="DateTime" Precision="3" />
+          <Property Name="cst_create_opportunity" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="cst_opportunity_seed" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="cost" Type="Decimal" Precision="15" Scale="4" />
+          <Property Name="quantity_on_hand" Type="Decimal" Precision="15" Scale="4" />
+          <Property Name="ytd_quantity_sold" Type="Decimal" Precision="15" Scale="4" />
+          <Property Name="ytd_amount_sold" Type="Decimal" Precision="15" Scale="4" />
+          <Property Name="cst_idh_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cst_mfgno" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_pack" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_wt" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_sfx" Type="Int32" />
+          <Property Name="cst_item_upc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cst_upc_prefix" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="cst_upc_suffix" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="cst_ordering_unit" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_mcs_brand_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cst_vendor_item_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cst_gtin_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cst_misc1_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cst_misc2_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cst_discontinued_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="cst_discontinued_date" Type="DateTime" Precision="3" />
+          <Property Name="cst_product_length" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_product_width" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_product_height" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_case_length" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_case_width" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_case_height" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_pallet_length" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_pallet_width" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_pallet_height" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_case_per_layer" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_layer_per_pallet" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_case_per_pallet" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_minimum_amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_minimum_unit" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_shelf_life" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_shelf_life_units" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_size" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_size_units" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_case_each" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_pack_each" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_each" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="mcs_product_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="cst_effective_date" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="csta_product_group" Relationship="Self.FK_onca_product_csta_product_group" FromRole="onca_product" ToRole="csta_product_group" />
+          <NavigationProperty Name="csta_product_group_level_1_values" Relationship="Self.FK_onca_product_csta_product_group_level_1_values" FromRole="onca_product" ToRole="csta_product_group_level_1_values" />
+          <NavigationProperty Name="csta_product_group_level_2_values" Relationship="Self.FK_onca_product_csta_product_group_level_2_values" FromRole="onca_product" ToRole="csta_product_group_level_2_values" />
+          <NavigationProperty Name="csta_product_group_level_3_values" Relationship="Self.FK_onca_product_csta_product_group_level_3_values" FromRole="onca_product" ToRole="csta_product_group_level_3_values" />
+          <NavigationProperty Name="csta_product_group_level_4_values" Relationship="Self.FK_onca_product_csta_product_group_level_4_values" FromRole="onca_product" ToRole="csta_product_group_level_4_values" />
+          <NavigationProperty Name="csta_product_group_level_5_values" Relationship="Self.FK_onca_product_csta_product_group_level_5_values" FromRole="onca_product" ToRole="csta_product_group_level_5_values" />
+          <NavigationProperty Name="csta_product_group_level_6_values" Relationship="Self.FK_onca_product_csta_product_group_level_6_values" FromRole="onca_product" ToRole="csta_product_group_level_6_values" />
+          <NavigationProperty Name="csta_product_group_level_7_values" Relationship="Self.FK_onca_product_csta_product_group_level_7_values" FromRole="onca_product" ToRole="csta_product_group_level_7_values" />
+          <NavigationProperty Name="csta_product_group_level_8_values" Relationship="Self.FK_onca_product_csta_product_group_level_8_values" FromRole="onca_product" ToRole="csta_product_group_level_8_values" />
+          <NavigationProperty Name="cstd_company_sales_history" Relationship="Self.FK__cstd_comp__produ__3E530F62" FromRole="onca_product" ToRole="cstd_company_sales_history" />
+        </EntityType>
+        <EntityType Name="oncd_company">
+          <Key>
+            <PropertyRef Name="company_id" />
+          </Key>
+          <Property Name="company_id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="company_name_1" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="company_name_2" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="company_name_1_search" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="company_name_2_search" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="company_name_1_soundex" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="company_name_2_soundex" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="annual_sales" Type="Int32" />
+          <Property Name="number_of_employees" Type="Int32" />
+          <Property Name="profile_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="external_id" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="company_type_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="contact_method_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="do_not_solicit" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="company_status_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="duplicate_check" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="creation_date" Type="DateTime" Precision="3" />
+          <Property Name="created_by_user_code" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="updated_date" Type="DateTime" Precision="3" />
+          <Property Name="updated_by_user_code" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="status_updated_date" Type="DateTime" Precision="3" />
+          <Property Name="status_updated_by_user_code" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="parent_company_id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="ticker_symbol" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="cst_do_not_call_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="cst_do_not_call_date" Type="DateTime" Precision="3" />
+          <Property Name="cst_on_hold_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="cst_on_hold_reason_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_is_spanish_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="cst_attempts" Type="Int32" />
+          <Property Name="cst_company_rank_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_rest_until_date" Type="DateTime" Precision="3" />
+          <Property Name="cst_yearly_call_frequency" Type="Int32" />
+          <Property Name="cst_attempts_year_to_date" Type="Int32" />
+          <Property Name="cst_company_association_type_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_cma_no" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="cst_facility_type_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_do_not_fax_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="cst_do_not_email_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="cst_do_not_mail_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="cst_dns_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="cst_dnscc_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="cst_prescriber" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="cst_prescriber_title" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="cst_ims_number" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_account_number" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="cst_field_rep_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_region_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_regional_manager_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_completed_flag" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="cst_program_flow_id" Type="Guid" />
+          <Property Name="cst_tdlinx_account_code" Type="String" MaxLength="6" FixedLength="true" Unicode="true" />
+          <Property Name="cst_tdlinx_store_code" Type="String" MaxLength="7" FixedLength="true" Unicode="true" />
+          <Property Name="cst_client_cot_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_west_cot_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_client_segment_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_west_segment_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_contact_frequency_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_client_account_number" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="cst_client_company_id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_creation_admin_date" Type="DateTime" Precision="0" />
+          <Property Name="cst_require_samples" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="cst_client_focus_account" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_west_focus_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_use_custom_product_codes" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="cst_special_shipping_instructions" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="cst_spend_rate" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_projected_spend_rate" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_allow_closeouts" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="cst_allow_non_promotable_sku" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="cst_company_stage_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_accrued_amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_projected_funding_amount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_price_bracket_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="sold_to" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="cst_coverage_code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="cst_hierarchy_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="cst_hierarchy_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="cst_annual_sales" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="cst_on_hold_date" Type="DateTime" Precision="3" />
+          <Property Name="cst_completion_date" Type="DateTime" Precision="3" />
+          <Property Name="cst_on_hold_start_date" Type="DateTime" Precision="3" />
+          <Property Name="cst_on_hold_end_date" Type="DateTime" Precision="3" />
+          <Property Name="cst_store_count" Type="Int32" />
+          <Property Name="cst_mcs_code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Owner_ID" Type="Int64" />
+          <NavigationProperty Name="cstd_company_sales_history" Relationship="Self.FK__cstd_comp__compa__3D5EEB29" FromRole="oncd_company" ToRole="cstd_company_sales_history" />
+          <NavigationProperty Name="oncd_company1" Relationship="Self.company_company_329" FromRole="oncd_company" ToRole="oncd_company1" />
+          <NavigationProperty Name="oncd_company2" Relationship="Self.company_company_329" FromRole="oncd_company1" ToRole="oncd_company" />
+        </EntityType>
+        <Association Name="FK_onca_product_csta_product_group">
+          <End Role="csta_product_group" Type="Self.csta_product_group" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group">
+              <PropertyRef Name="product_group_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__3A323CCD">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_1_values" Type="Self.csta_product_group_level_1_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_1_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_1_values">
+          <End Role="csta_product_group_level_1_values" Type="Self.csta_product_group_level_1_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_1_values">
+              <PropertyRef Name="product_group_level_1_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_1_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__3849F45B">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_2_values" Type="Self.csta_product_group_level_2_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_2_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_2_values">
+          <End Role="csta_product_group_level_2_values" Type="Self.csta_product_group_level_2_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_2_values">
+              <PropertyRef Name="product_group_level_2_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_2_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__3C1A853F">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_3_values" Type="Self.csta_product_group_level_3_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_3_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_3_values">
+          <End Role="csta_product_group_level_3_values" Type="Self.csta_product_group_level_3_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_3_values">
+              <PropertyRef Name="product_group_level_3_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_3_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__3E02CDB1">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_4_values" Type="Self.csta_product_group_level_4_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_4_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_4_values">
+          <End Role="csta_product_group_level_4_values" Type="Self.csta_product_group_level_4_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_4_values">
+              <PropertyRef Name="product_group_level_4_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_4_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__3FEB1623">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_5_values" Type="Self.csta_product_group_level_5_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_5_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_5_values">
+          <End Role="csta_product_group_level_5_values" Type="Self.csta_product_group_level_5_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_5_values">
+              <PropertyRef Name="product_group_level_5_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_5_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__41D35E95">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_6_values" Type="Self.csta_product_group_level_6_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_6_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_6_values">
+          <End Role="csta_product_group_level_6_values" Type="Self.csta_product_group_level_6_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_6_values">
+              <PropertyRef Name="product_group_level_6_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_6_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__43BBA707">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_7_values" Type="Self.csta_product_group_level_7_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_7_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_7_values">
+          <End Role="csta_product_group_level_7_values" Type="Self.csta_product_group_level_7_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_7_values">
+              <PropertyRef Name="product_group_level_7_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_7_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__csta_prod__produ__45A3EF79">
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="1" />
+          <End Role="csta_product_group_level_8_values" Type="Self.csta_product_group_level_8_values" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_8_values">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_onca_product_csta_product_group_level_8_values">
+          <End Role="csta_product_group_level_8_values" Type="Self.csta_product_group_level_8_values" Multiplicity="0..1" />
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_8_values">
+              <PropertyRef Name="product_group_level_8_code" />
+            </Principal>
+            <Dependent Role="onca_product">
+              <PropertyRef Name="cst_product_group_level_8_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_csta_product_group_level_definition_csta_product_group_level_definition_table">
+          <End Role="csta_product_group_level_definition_table" Type="Self.csta_product_group_level_definition_table" Multiplicity="1" />
+          <End Role="csta_product_group_level_definition" Type="Self.csta_product_group_level_definition" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="csta_product_group_level_definition_table">
+              <PropertyRef Name="product_group_level_id" />
+            </Principal>
+            <Dependent Role="csta_product_group_level_definition">
+              <PropertyRef Name="product_group_level_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cstd_comp__compa__3D5EEB29">
+          <End Role="oncd_company" Type="Self.oncd_company" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="cstd_company_sales_history" Type="Self.cstd_company_sales_history" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="oncd_company">
+              <PropertyRef Name="company_id" />
+            </Principal>
+            <Dependent Role="cstd_company_sales_history">
+              <PropertyRef Name="company_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__cstd_comp__produ__3E530F62">
+          <End Role="onca_product" Type="Self.onca_product" Multiplicity="0..1" />
+          <End Role="cstd_company_sales_history" Type="Self.cstd_company_sales_history" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="onca_product">
+              <PropertyRef Name="product_code" />
+            </Principal>
+            <Dependent Role="cstd_company_sales_history">
+              <PropertyRef Name="product_code" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="company_company_329">
+          <End Role="oncd_company" Type="Self.oncd_company" Multiplicity="0..1" />
+          <End Role="oncd_company1" Type="Self.oncd_company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="oncd_company">
+              <PropertyRef Name="company_id" />
+            </Principal>
+            <Dependent Role="oncd_company1">
+              <PropertyRef Name="parent_company_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="onc_pg_famEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="csta_product_group" EntityType="Self.csta_product_group" />
+          <EntitySet Name="csta_product_group_level_1_values" EntityType="Self.csta_product_group_level_1_values" />
+          <EntitySet Name="csta_product_group_level_2_values" EntityType="Self.csta_product_group_level_2_values" />
+          <EntitySet Name="csta_product_group_level_3_values" EntityType="Self.csta_product_group_level_3_values" />
+          <EntitySet Name="csta_product_group_level_4_values" EntityType="Self.csta_product_group_level_4_values" />
+          <EntitySet Name="csta_product_group_level_5_values" EntityType="Self.csta_product_group_level_5_values" />
+          <EntitySet Name="csta_product_group_level_6_values" EntityType="Self.csta_product_group_level_6_values" />
+          <EntitySet Name="csta_product_group_level_7_values" EntityType="Self.csta_product_group_level_7_values" />
+          <EntitySet Name="csta_product_group_level_8_values" EntityType="Self.csta_product_group_level_8_values" />
+          <EntitySet Name="csta_product_group_level_definition" EntityType="Self.csta_product_group_level_definition" />
+          <EntitySet Name="csta_product_group_level_definition_table" EntityType="Self.csta_product_group_level_definition_table" />
+          <EntitySet Name="cstd_company_sales_history" EntityType="Self.cstd_company_sales_history" />
+          <EntitySet Name="onca_phone_type" EntityType="Self.onca_phone_type" />
+          <EntitySet Name="onca_product" EntityType="Self.onca_product" />
+          <EntitySet Name="oncd_company" EntityType="Self.oncd_company" />
+          <AssociationSet Name="FK_onca_product_csta_product_group" Association="Self.FK_onca_product_csta_product_group">
+            <End Role="csta_product_group" EntitySet="csta_product_group" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__3A323CCD" Association="Self.FK__csta_prod__produ__3A323CCD">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_1_values" EntitySet="csta_product_group_level_1_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_1_values" Association="Self.FK_onca_product_csta_product_group_level_1_values">
+            <End Role="csta_product_group_level_1_values" EntitySet="csta_product_group_level_1_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__3849F45B" Association="Self.FK__csta_prod__produ__3849F45B">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_2_values" EntitySet="csta_product_group_level_2_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_2_values" Association="Self.FK_onca_product_csta_product_group_level_2_values">
+            <End Role="csta_product_group_level_2_values" EntitySet="csta_product_group_level_2_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__3C1A853F" Association="Self.FK__csta_prod__produ__3C1A853F">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_3_values" EntitySet="csta_product_group_level_3_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_3_values" Association="Self.FK_onca_product_csta_product_group_level_3_values">
+            <End Role="csta_product_group_level_3_values" EntitySet="csta_product_group_level_3_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__3E02CDB1" Association="Self.FK__csta_prod__produ__3E02CDB1">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_4_values" EntitySet="csta_product_group_level_4_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_4_values" Association="Self.FK_onca_product_csta_product_group_level_4_values">
+            <End Role="csta_product_group_level_4_values" EntitySet="csta_product_group_level_4_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__3FEB1623" Association="Self.FK__csta_prod__produ__3FEB1623">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_5_values" EntitySet="csta_product_group_level_5_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_5_values" Association="Self.FK_onca_product_csta_product_group_level_5_values">
+            <End Role="csta_product_group_level_5_values" EntitySet="csta_product_group_level_5_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__41D35E95" Association="Self.FK__csta_prod__produ__41D35E95">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_6_values" EntitySet="csta_product_group_level_6_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_6_values" Association="Self.FK_onca_product_csta_product_group_level_6_values">
+            <End Role="csta_product_group_level_6_values" EntitySet="csta_product_group_level_6_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__43BBA707" Association="Self.FK__csta_prod__produ__43BBA707">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_7_values" EntitySet="csta_product_group_level_7_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_7_values" Association="Self.FK_onca_product_csta_product_group_level_7_values">
+            <End Role="csta_product_group_level_7_values" EntitySet="csta_product_group_level_7_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK__csta_prod__produ__45A3EF79" Association="Self.FK__csta_prod__produ__45A3EF79">
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+            <End Role="csta_product_group_level_8_values" EntitySet="csta_product_group_level_8_values" />
+          </AssociationSet>
+          <AssociationSet Name="FK_onca_product_csta_product_group_level_8_values" Association="Self.FK_onca_product_csta_product_group_level_8_values">
+            <End Role="csta_product_group_level_8_values" EntitySet="csta_product_group_level_8_values" />
+            <End Role="onca_product" EntitySet="onca_product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_csta_product_group_level_definition_csta_product_group_level_definition_table" Association="Self.FK_csta_product_group_level_definition_csta_product_group_level_definition_table">
+            <End Role="csta_product_group_level_definition_table" EntitySet="csta_product_group_level_definition_table" />
+            <End Role="csta_product_group_level_definition" EntitySet="csta_product_group_level_definition" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cstd_comp__compa__3D5EEB29" Association="Self.FK__cstd_comp__compa__3D5EEB29">
+            <End Role="oncd_company" EntitySet="oncd_company" />
+            <End Role="cstd_company_sales_history" EntitySet="cstd_company_sales_history" />
+          </AssociationSet>
+          <AssociationSet Name="FK__cstd_comp__produ__3E530F62" Association="Self.FK__cstd_comp__produ__3E530F62">
+            <End Role="onca_product" EntitySet="onca_product" />
+            <End Role="cstd_company_sales_history" EntitySet="cstd_company_sales_history" />
+          </AssociationSet>
+          <AssociationSet Name="company_company_329" Association="Self.company_company_329">
+            <End Role="oncd_company" EntitySet="oncd_company" />
+            <End Role="oncd_company1" EntitySet="oncd_company" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="onc_pg_famModelStoreContainer" CdmEntityContainer="onc_pg_famEntities">
+          <EntitySetMapping Name="csta_product_group">
+            <EntityTypeMapping TypeName="onc_pg_famModel.csta_product_group">
+              <MappingFragment StoreEntitySet="csta_product_group">
+                <ScalarProperty Name="product_group_code" ColumnName="product_group_code" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="product_category_code" ColumnName="product_category_code" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="csta_product_group_level_1_values">
+            <EntityTypeMapping TypeName="onc_pg_famModel.csta_product_group_level_1_values">
+              <MappingFragment StoreEntitySet="csta_product_group_level_1_values">
+                <ScalarProperty Name="product_group_level_1_code" ColumnName="product_group_level_1_code" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="external_code" ColumnName="external_code" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="parent_group_level_code" ColumnName="parent_group_level_code" />
+                <ScalarProperty Name="product_group_level_id" ColumnName="product_group_level_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="csta_product_group_level_2_values">
+            <EntityTypeMapping TypeName="onc_pg_famModel.csta_product_group_level_2_values">
+              <MappingFragment StoreEntitySet="csta_product_group_level_2_values">
+                <ScalarProperty Name="product_group_level_2_code" ColumnName="product_group_level_2_code" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="external_code" ColumnName="external_code" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="parent_group_level_code" ColumnName="parent_group_level_code" />
+                <ScalarProperty Name="product_group_level_id" ColumnName="product_group_level_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="csta_product_group_level_3_values">
+            <EntityTypeMapping TypeName="onc_pg_famModel.csta_product_group_level_3_values">
+              <MappingFragment StoreEntitySet="csta_product_group_level_3_values">
+                <ScalarProperty Name="product_group_level_3_code" ColumnName="product_group_level_3_code" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="external_code" ColumnName="external_code" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="parent_group_level_code" ColumnName="parent_group_level_code" />
+                <ScalarProperty Name="product_group_level_id" ColumnName="product_group_level_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="csta_product_group_level_4_values">
+            <EntityTypeMapping TypeName="onc_pg_famModel.csta_product_group_level_4_values">
+              <MappingFragment StoreEntitySet="csta_product_group_level_4_values">
+                <ScalarProperty Name="product_group_level_4_code" ColumnName="product_group_level_4_code" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="external_code" ColumnName="external_code" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="parent_group_level_code" ColumnName="parent_group_level_code" />
+                <ScalarProperty Name="product_group_level_id" ColumnName="product_group_level_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="csta_product_group_level_5_values">
+            <EntityTypeMapping TypeName="onc_pg_famModel.csta_product_group_level_5_values">
+              <MappingFragment StoreEntitySet="csta_product_group_level_5_values">
+                <ScalarProperty Name="product_group_level_5_code" ColumnName="product_group_level_5_code" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="external_code" ColumnName="external_code" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="parent_group_level_code" ColumnName="parent_group_level_code" />
+                <ScalarProperty Name="product_group_level_id" ColumnName="product_group_level_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="csta_product_group_level_6_values">
+            <EntityTypeMapping TypeName="onc_pg_famModel.csta_product_group_level_6_values">
+              <MappingFragment StoreEntitySet="csta_product_group_level_6_values">
+                <ScalarProperty Name="product_group_level_6_code" ColumnName="product_group_level_6_code" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="external_code" ColumnName="external_code" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="parent_group_level_code" ColumnName="parent_group_level_code" />
+                <ScalarProperty Name="product_group_level_id" ColumnName="product_group_level_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="csta_product_group_level_7_values">
+            <EntityTypeMapping TypeName="onc_pg_famModel.csta_product_group_level_7_values">
+              <MappingFragment StoreEntitySet="csta_product_group_level_7_values">
+                <ScalarProperty Name="product_group_level_7_code" ColumnName="product_group_level_7_code" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="external_code" ColumnName="external_code" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="parent_group_level_code" ColumnName="parent_group_level_code" />
+                <ScalarProperty Name="product_group_level_id" ColumnName="product_group_level_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="csta_product_group_level_8_values">
+            <EntityTypeMapping TypeName="onc_pg_famModel.csta_product_group_level_8_values">
+              <MappingFragment StoreEntitySet="csta_product_group_level_8_values">
+                <ScalarProperty Name="product_group_level_8_code" ColumnName="product_group_level_8_code" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="external_code" ColumnName="external_code" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="parent_group_level_code" ColumnName="parent_group_level_code" />
+                <ScalarProperty Name="product_group_level_id" ColumnName="product_group_level_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="csta_product_group_level_definition">
+            <EntityTypeMapping TypeName="onc_pg_famModel.csta_product_group_level_definition">
+              <MappingFragment StoreEntitySet="csta_product_group_level_definition">
+                <ScalarProperty Name="product_group_level_id" ColumnName="product_group_level_id" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="sort_order" ColumnName="sort_order" />
+                <ScalarProperty Name="active" ColumnName="active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="csta_product_group_level_definition_table">
+            <EntityTypeMapping TypeName="onc_pg_famModel.csta_product_group_level_definition_table">
+              <MappingFragment StoreEntitySet="csta_product_group_level_definition_table">
+                <ScalarProperty Name="product_group_level_id" ColumnName="product_group_level_id" />
+                <ScalarProperty Name="table_name" ColumnName="table_name" />
+                <ScalarProperty Name="sort_order" ColumnName="sort_order" />
+                <ScalarProperty Name="active" ColumnName="active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cstd_company_sales_history">
+            <EntityTypeMapping TypeName="onc_pg_famModel.cstd_company_sales_history">
+              <MappingFragment StoreEntitySet="cstd_company_sales_history">
+                <ScalarProperty Name="company_sales_history_id" ColumnName="company_sales_history_id" />
+                <ScalarProperty Name="company_id" ColumnName="company_id" />
+                <ScalarProperty Name="product_code" ColumnName="product_code" />
+                <ScalarProperty Name="sales_revenue" ColumnName="sales_revenue" />
+                <ScalarProperty Name="sales_date" ColumnName="sales_date" />
+                <ScalarProperty Name="ship_to_num" ColumnName="ship_to_num" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="onca_phone_type">
+            <EntityTypeMapping TypeName="onc_pg_famModel.onca_phone_type">
+              <MappingFragment StoreEntitySet="onca_phone_type">
+                <ScalarProperty Name="phone_type_code" ColumnName="phone_type_code" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="device_type" ColumnName="device_type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="onca_product">
+            <EntityTypeMapping TypeName="onc_pg_famModel.onca_product">
+              <MappingFragment StoreEntitySet="onca_product">
+                <ScalarProperty Name="product_code" ColumnName="product_code" />
+                <ScalarProperty Name="manufacturer_code" ColumnName="manufacturer_code" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="unit_price" ColumnName="unit_price" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="cst_feature" ColumnName="cst_feature" />
+                <ScalarProperty Name="cst_benefit" ColumnName="cst_benefit" />
+                <ScalarProperty Name="cst_part_number" ColumnName="cst_part_number" />
+                <ScalarProperty Name="cst_part_number_location" ColumnName="cst_part_number_location" />
+                <ScalarProperty Name="cst_category" ColumnName="cst_category" />
+                <ScalarProperty Name="cst_tools_and_resources_description" ColumnName="cst_tools_and_resources_description" />
+                <ScalarProperty Name="cst_expiration_date" ColumnName="cst_expiration_date" />
+                <ScalarProperty Name="cst_class" ColumnName="cst_class" />
+                <ScalarProperty Name="cst_ist_use" ColumnName="cst_ist_use" />
+                <ScalarProperty Name="cst_rev" ColumnName="cst_rev" />
+                <ScalarProperty Name="cst_uom" ColumnName="cst_uom" />
+                <ScalarProperty Name="cst_product_group_code" ColumnName="cst_product_group_code" />
+                <ScalarProperty Name="cst_min_lead_time_uom_code" ColumnName="cst_min_lead_time_uom_code" />
+                <ScalarProperty Name="cst_product_group_level_1_code" ColumnName="cst_product_group_level_1_code" />
+                <ScalarProperty Name="cst_product_group_level_2_code" ColumnName="cst_product_group_level_2_code" />
+                <ScalarProperty Name="cst_product_group_level_3_code" ColumnName="cst_product_group_level_3_code" />
+                <ScalarProperty Name="cst_product_group_level_4_code" ColumnName="cst_product_group_level_4_code" />
+                <ScalarProperty Name="cst_product_group_level_5_code" ColumnName="cst_product_group_level_5_code" />
+                <ScalarProperty Name="cst_product_group_level_6_code" ColumnName="cst_product_group_level_6_code" />
+                <ScalarProperty Name="cst_product_group_level_7_code" ColumnName="cst_product_group_level_7_code" />
+                <ScalarProperty Name="cst_product_group_level_8_code" ColumnName="cst_product_group_level_8_code" />
+                <ScalarProperty Name="cst_order_type_code" ColumnName="cst_order_type_code" />
+                <ScalarProperty Name="cst_created_by_user_code" ColumnName="cst_created_by_user_code" />
+                <ScalarProperty Name="cst_updated_by_user_code" ColumnName="cst_updated_by_user_code" />
+                <ScalarProperty Name="cst_product_availability_code" ColumnName="cst_product_availability_code" />
+                <ScalarProperty Name="cst_sku" ColumnName="cst_sku" />
+                <ScalarProperty Name="cst_alternate_description" ColumnName="cst_alternate_description" />
+                <ScalarProperty Name="cst_upc" ColumnName="cst_upc" />
+                <ScalarProperty Name="cst_dea_certificate_required" ColumnName="cst_dea_certificate_required" />
+                <ScalarProperty Name="cst_product_category_code" ColumnName="cst_product_category_code" />
+                <ScalarProperty Name="cst_product_division_code" ColumnName="cst_product_division_code" />
+                <ScalarProperty Name="cst_product_brand_code" ColumnName="cst_product_brand_code" />
+                <ScalarProperty Name="cst_inventory_status_code" ColumnName="cst_inventory_status_code" />
+                <ScalarProperty Name="cst_min_lead_time" ColumnName="cst_min_lead_time" />
+                <ScalarProperty Name="cst_new_distribution_until_date" ColumnName="cst_new_distribution_until_date" />
+                <ScalarProperty Name="cst_first_ship_date" ColumnName="cst_first_ship_date" />
+                <ScalarProperty Name="cst_last_ship_date" ColumnName="cst_last_ship_date" />
+                <ScalarProperty Name="cst_first_order_date" ColumnName="cst_first_order_date" />
+                <ScalarProperty Name="cst_last_order_date" ColumnName="cst_last_order_date" />
+                <ScalarProperty Name="cst_track_availability" ColumnName="cst_track_availability" />
+                <ScalarProperty Name="cst_sku_type_code" ColumnName="cst_sku_type_code" />
+                <ScalarProperty Name="cst_creation_date" ColumnName="cst_creation_date" />
+                <ScalarProperty Name="cst_updated_date" ColumnName="cst_updated_date" />
+                <ScalarProperty Name="cst_create_opportunity" ColumnName="cst_create_opportunity" />
+                <ScalarProperty Name="cst_opportunity_seed" ColumnName="cst_opportunity_seed" />
+                <ScalarProperty Name="cost" ColumnName="cost" />
+                <ScalarProperty Name="quantity_on_hand" ColumnName="quantity_on_hand" />
+                <ScalarProperty Name="ytd_quantity_sold" ColumnName="ytd_quantity_sold" />
+                <ScalarProperty Name="ytd_amount_sold" ColumnName="ytd_amount_sold" />
+                <ScalarProperty Name="cst_idh_number" ColumnName="cst_idh_number" />
+                <ScalarProperty Name="cst_mfgno" ColumnName="cst_mfgno" />
+                <ScalarProperty Name="cst_pack" ColumnName="cst_pack" />
+                <ScalarProperty Name="cst_wt" ColumnName="cst_wt" />
+                <ScalarProperty Name="cst_sfx" ColumnName="cst_sfx" />
+                <ScalarProperty Name="cst_item_upc" ColumnName="cst_item_upc" />
+                <ScalarProperty Name="cst_upc_prefix" ColumnName="cst_upc_prefix" />
+                <ScalarProperty Name="cst_upc_suffix" ColumnName="cst_upc_suffix" />
+                <ScalarProperty Name="cst_ordering_unit" ColumnName="cst_ordering_unit" />
+                <ScalarProperty Name="cst_mcs_brand_code" ColumnName="cst_mcs_brand_code" />
+                <ScalarProperty Name="cst_vendor_item_code" ColumnName="cst_vendor_item_code" />
+                <ScalarProperty Name="cst_gtin_code" ColumnName="cst_gtin_code" />
+                <ScalarProperty Name="cst_misc1_code" ColumnName="cst_misc1_code" />
+                <ScalarProperty Name="cst_misc2_code" ColumnName="cst_misc2_code" />
+                <ScalarProperty Name="cst_discontinued_flag" ColumnName="cst_discontinued_flag" />
+                <ScalarProperty Name="cst_discontinued_date" ColumnName="cst_discontinued_date" />
+                <ScalarProperty Name="cst_product_length" ColumnName="cst_product_length" />
+                <ScalarProperty Name="cst_product_width" ColumnName="cst_product_width" />
+                <ScalarProperty Name="cst_product_height" ColumnName="cst_product_height" />
+                <ScalarProperty Name="cst_case_length" ColumnName="cst_case_length" />
+                <ScalarProperty Name="cst_case_width" ColumnName="cst_case_width" />
+                <ScalarProperty Name="cst_case_height" ColumnName="cst_case_height" />
+                <ScalarProperty Name="cst_pallet_length" ColumnName="cst_pallet_length" />
+                <ScalarProperty Name="cst_pallet_width" ColumnName="cst_pallet_width" />
+                <ScalarProperty Name="cst_pallet_height" ColumnName="cst_pallet_height" />
+                <ScalarProperty Name="cst_case_per_layer" ColumnName="cst_case_per_layer" />
+                <ScalarProperty Name="cst_layer_per_pallet" ColumnName="cst_layer_per_pallet" />
+                <ScalarProperty Name="cst_case_per_pallet" ColumnName="cst_case_per_pallet" />
+                <ScalarProperty Name="cst_minimum_amount" ColumnName="cst_minimum_amount" />
+                <ScalarProperty Name="cst_minimum_unit" ColumnName="cst_minimum_unit" />
+                <ScalarProperty Name="cst_shelf_life" ColumnName="cst_shelf_life" />
+                <ScalarProperty Name="cst_shelf_life_units" ColumnName="cst_shelf_life_units" />
+                <ScalarProperty Name="cst_size" ColumnName="cst_size" />
+                <ScalarProperty Name="cst_size_units" ColumnName="cst_size_units" />
+                <ScalarProperty Name="cst_case_each" ColumnName="cst_case_each" />
+                <ScalarProperty Name="cst_pack_each" ColumnName="cst_pack_each" />
+                <ScalarProperty Name="cst_each" ColumnName="cst_each" />
+                <ScalarProperty Name="mcs_product_flag" ColumnName="mcs_product_flag" />
+                <ScalarProperty Name="cst_effective_date" ColumnName="cst_effective_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="oncd_company">
+            <EntityTypeMapping TypeName="onc_pg_famModel.oncd_company">
+              <MappingFragment StoreEntitySet="oncd_company">
+                <ScalarProperty Name="company_id" ColumnName="company_id" />
+                <ScalarProperty Name="company_name_1" ColumnName="company_name_1" />
+                <ScalarProperty Name="company_name_2" ColumnName="company_name_2" />
+                <ScalarProperty Name="company_name_1_search" ColumnName="company_name_1_search" />
+                <ScalarProperty Name="company_name_2_search" ColumnName="company_name_2_search" />
+                <ScalarProperty Name="company_name_1_soundex" ColumnName="company_name_1_soundex" />
+                <ScalarProperty Name="company_name_2_soundex" ColumnName="company_name_2_soundex" />
+                <ScalarProperty Name="annual_sales" ColumnName="annual_sales" />
+                <ScalarProperty Name="number_of_employees" ColumnName="number_of_employees" />
+                <ScalarProperty Name="profile_code" ColumnName="profile_code" />
+                <ScalarProperty Name="external_id" ColumnName="external_id" />
+                <ScalarProperty Name="company_type_code" ColumnName="company_type_code" />
+                <ScalarProperty Name="contact_method_code" ColumnName="contact_method_code" />
+                <ScalarProperty Name="do_not_solicit" ColumnName="do_not_solicit" />
+                <ScalarProperty Name="company_status_code" ColumnName="company_status_code" />
+                <ScalarProperty Name="duplicate_check" ColumnName="duplicate_check" />
+                <ScalarProperty Name="creation_date" ColumnName="creation_date" />
+                <ScalarProperty Name="created_by_user_code" ColumnName="created_by_user_code" />
+                <ScalarProperty Name="updated_date" ColumnName="updated_date" />
+                <ScalarProperty Name="updated_by_user_code" ColumnName="updated_by_user_code" />
+                <ScalarProperty Name="status_updated_date" ColumnName="status_updated_date" />
+                <ScalarProperty Name="status_updated_by_user_code" ColumnName="status_updated_by_user_code" />
+                <ScalarProperty Name="parent_company_id" ColumnName="parent_company_id" />
+                <ScalarProperty Name="ticker_symbol" ColumnName="ticker_symbol" />
+                <ScalarProperty Name="cst_do_not_call_flag" ColumnName="cst_do_not_call_flag" />
+                <ScalarProperty Name="cst_do_not_call_date" ColumnName="cst_do_not_call_date" />
+                <ScalarProperty Name="cst_on_hold_flag" ColumnName="cst_on_hold_flag" />
+                <ScalarProperty Name="cst_on_hold_reason_code" ColumnName="cst_on_hold_reason_code" />
+                <ScalarProperty Name="cst_is_spanish_flag" ColumnName="cst_is_spanish_flag" />
+                <ScalarProperty Name="cst_attempts" ColumnName="cst_attempts" />
+                <ScalarProperty Name="cst_company_rank_code" ColumnName="cst_company_rank_code" />
+                <ScalarProperty Name="cst_rest_until_date" ColumnName="cst_rest_until_date" />
+                <ScalarProperty Name="cst_yearly_call_frequency" ColumnName="cst_yearly_call_frequency" />
+                <ScalarProperty Name="cst_attempts_year_to_date" ColumnName="cst_attempts_year_to_date" />
+                <ScalarProperty Name="cst_company_association_type_code" ColumnName="cst_company_association_type_code" />
+                <ScalarProperty Name="cst_cma_no" ColumnName="cst_cma_no" />
+                <ScalarProperty Name="cst_facility_type_code" ColumnName="cst_facility_type_code" />
+                <ScalarProperty Name="cst_do_not_fax_flag" ColumnName="cst_do_not_fax_flag" />
+                <ScalarProperty Name="cst_do_not_email_flag" ColumnName="cst_do_not_email_flag" />
+                <ScalarProperty Name="cst_do_not_mail_flag" ColumnName="cst_do_not_mail_flag" />
+                <ScalarProperty Name="cst_dns_flag" ColumnName="cst_dns_flag" />
+                <ScalarProperty Name="cst_dnscc_flag" ColumnName="cst_dnscc_flag" />
+                <ScalarProperty Name="cst_prescriber" ColumnName="cst_prescriber" />
+                <ScalarProperty Name="cst_prescriber_title" ColumnName="cst_prescriber_title" />
+                <ScalarProperty Name="cst_ims_number" ColumnName="cst_ims_number" />
+                <ScalarProperty Name="cst_account_number" ColumnName="cst_account_number" />
+                <ScalarProperty Name="cst_field_rep_code" ColumnName="cst_field_rep_code" />
+                <ScalarProperty Name="cst_region_code" ColumnName="cst_region_code" />
+                <ScalarProperty Name="cst_regional_manager_code" ColumnName="cst_regional_manager_code" />
+                <ScalarProperty Name="cst_completed_flag" ColumnName="cst_completed_flag" />
+                <ScalarProperty Name="cst_program_flow_id" ColumnName="cst_program_flow_id" />
+                <ScalarProperty Name="cst_tdlinx_account_code" ColumnName="cst_tdlinx_account_code" />
+                <ScalarProperty Name="cst_tdlinx_store_code" ColumnName="cst_tdlinx_store_code" />
+                <ScalarProperty Name="cst_client_cot_code" ColumnName="cst_client_cot_code" />
+                <ScalarProperty Name="cst_west_cot_code" ColumnName="cst_west_cot_code" />
+                <ScalarProperty Name="cst_client_segment_code" ColumnName="cst_client_segment_code" />
+                <ScalarProperty Name="cst_west_segment_code" ColumnName="cst_west_segment_code" />
+                <ScalarProperty Name="cst_contact_frequency_code" ColumnName="cst_contact_frequency_code" />
+                <ScalarProperty Name="cst_client_account_number" ColumnName="cst_client_account_number" />
+                <ScalarProperty Name="cst_client_company_id" ColumnName="cst_client_company_id" />
+                <ScalarProperty Name="cst_creation_admin_date" ColumnName="cst_creation_admin_date" />
+                <ScalarProperty Name="cst_require_samples" ColumnName="cst_require_samples" />
+                <ScalarProperty Name="cst_client_focus_account" ColumnName="cst_client_focus_account" />
+                <ScalarProperty Name="cst_west_focus_code" ColumnName="cst_west_focus_code" />
+                <ScalarProperty Name="cst_use_custom_product_codes" ColumnName="cst_use_custom_product_codes" />
+                <ScalarProperty Name="cst_special_shipping_instructions" ColumnName="cst_special_shipping_instructions" />
+                <ScalarProperty Name="cst_spend_rate" ColumnName="cst_spend_rate" />
+                <ScalarProperty Name="cst_projected_spend_rate" ColumnName="cst_projected_spend_rate" />
+                <ScalarProperty Name="cst_allow_closeouts" ColumnName="cst_allow_closeouts" />
+                <ScalarProperty Name="cst_allow_non_promotable_sku" ColumnName="cst_allow_non_promotable_sku" />
+                <ScalarProperty Name="cst_company_stage_code" ColumnName="cst_company_stage_code" />
+                <ScalarProperty Name="cst_accrued_amount" ColumnName="cst_accrued_amount" />
+                <ScalarProperty Name="cst_projected_funding_amount" ColumnName="cst_projected_funding_amount" />
+                <ScalarProperty Name="cst_price_bracket_code" ColumnName="cst_price_bracket_code" />
+                <ScalarProperty Name="sold_to" ColumnName="sold_to" />
+                <ScalarProperty Name="cst_coverage_code" ColumnName="cst_coverage_code" />
+                <ScalarProperty Name="cst_hierarchy_id" ColumnName="cst_hierarchy_id" />
+                <ScalarProperty Name="cst_hierarchy_name" ColumnName="cst_hierarchy_name" />
+                <ScalarProperty Name="cst_annual_sales" ColumnName="cst_annual_sales" />
+                <ScalarProperty Name="cst_on_hold_date" ColumnName="cst_on_hold_date" />
+                <ScalarProperty Name="cst_completion_date" ColumnName="cst_completion_date" />
+                <ScalarProperty Name="cst_on_hold_start_date" ColumnName="cst_on_hold_start_date" />
+                <ScalarProperty Name="cst_on_hold_end_date" ColumnName="cst_on_hold_end_date" />
+                <ScalarProperty Name="cst_store_count" ColumnName="cst_store_count" />
+                <ScalarProperty Name="cst_mcs_code" ColumnName="cst_mcs_code" />
+                <ScalarProperty Name="Owner_ID" ColumnName="Owner_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

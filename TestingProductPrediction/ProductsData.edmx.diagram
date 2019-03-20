@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6f17ba3d26be4136b6e3f42ccfba5653" Name="Diagram1">
+        <EntityTypeShape EntityType="onc_pg_famModel.csta_product_group" Width="1.5" PointX="5.25" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="onc_pg_famModel.csta_product_group_level_1_values" Width="1.5" PointX="5.25" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="onc_pg_famModel.csta_product_group_level_2_values" Width="1.5" PointX="5.25" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="onc_pg_famModel.csta_product_group_level_3_values" Width="1.5" PointX="5.25" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="onc_pg_famModel.csta_product_group_level_4_values" Width="1.5" PointX="5.25" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="onc_pg_famModel.csta_product_group_level_5_values" Width="1.5" PointX="5.25" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="onc_pg_famModel.csta_product_group_level_6_values" Width="1.5" PointX="5.25" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="onc_pg_famModel.csta_product_group_level_7_values" Width="1.5" PointX="5.25" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="onc_pg_famModel.csta_product_group_level_8_values" Width="1.5" PointX="5.25" PointY="41.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="onc_pg_famModel.csta_product_group_level_definition" Width="1.5" PointX="3" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="onc_pg_famModel.csta_product_group_level_definition_table" Width="1.5" PointX="0.75" PointY="29.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="onc_pg_famModel.cstd_company_sales_history" Width="1.5" PointX="9.75" PointY="29.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="onc_pg_famModel.onca_phone_type" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="onc_pg_famModel.onca_product" Width="1.5" PointX="7.5" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="onc_pg_famModel.oncd_company" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="onc_pg_famModel.FK_onca_product_csta_product_group" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK__csta_prod__produ__3A323CCD" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK_onca_product_csta_product_group_level_1_values" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK__csta_prod__produ__3849F45B" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK_onca_product_csta_product_group_level_2_values" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK__csta_prod__produ__3C1A853F" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK_onca_product_csta_product_group_level_3_values" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK__csta_prod__produ__3E02CDB1" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK_onca_product_csta_product_group_level_4_values" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK__csta_prod__produ__3FEB1623" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK_onca_product_csta_product_group_level_5_values" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK__csta_prod__produ__41D35E95" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK_onca_product_csta_product_group_level_6_values" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK__csta_prod__produ__43BBA707" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK_onca_product_csta_product_group_level_7_values" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK__csta_prod__produ__45A3EF79" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK_onca_product_csta_product_group_level_8_values" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK_csta_product_group_level_definition_csta_product_group_level_definition_table" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK__cstd_comp__compa__3D5EEB29" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.FK__cstd_comp__produ__3E530F62" ManuallyRouted="false" />
+        <AssociationConnector Association="onc_pg_famModel.company_company_329" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
