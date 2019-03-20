@@ -10,15 +10,22 @@ namespace MachineLearningProductPrediction
     {
         public float Price;
 
-        public DateTime LastSaleDate;
+        public float LastSaleDate;
 
-        public DateTime CurrentSaleDate;
+        public float CurrentSaleDate;
 
         public float Quantity;
+        public float companyName;
+        public float CompanyType;
 
-        public string CurrentProduct;
+       
+        public float ProductsBoughtWith;
 
-        public string SecondProduct; 
+        public float ProductType;
+        public float ProductCategory;
+        public float ProductGroup;
+
+        public string Label;
 
 
 
